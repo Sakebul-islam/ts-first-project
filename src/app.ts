@@ -9,8 +9,8 @@ app.use(express.json());
 // cors
 app.use(cors());
 
-// application routes 
-app.use('/api/v1/students',StudentRoutes)
+// application routes
+app.use('/api/v1/students', StudentRoutes);
 
 const getController = (req: Request, res: Response) => {
   res.send('Hello World!');

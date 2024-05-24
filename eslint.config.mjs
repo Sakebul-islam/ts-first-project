@@ -18,6 +18,22 @@ export default [
       'prefer-const': 'error',
       'no-console': 'warn',
       'no-undef': 'error',
+      '@typescript-eslint/ban-types': [
+        'error',
+        {
+          types: {
+            String: false,
+            Boolean: false,
+            Number: false,
+            Symbol: false,
+            '{}': false,
+            Object: false,
+            object: false,
+            Function: false,
+          },
+          extendDefaults: true,
+        },
+      ],
     },
   },
 
